@@ -26,6 +26,8 @@ pip install -r requirements.txt  # if you add dependencies like PyYAML
 
 ## Usage
 
+## DistrictInfo Class Methods & Examples
+
 ### get_all_districts()
 
 ```
@@ -74,3 +76,40 @@ print(all_data[0])  # Print first district data
 
 ```
 
+## CurrencyConverter Class Methods & Examples
+
+### available_currencies()
+
+Returns list of supported currency codes.
+
+```
+print(currency.available_currencies())
+ Example output: ['USD', 'EUR', 'ZAR', 'GBP', 'KES', ...]
+
+```
+
+### convert_from_base(amount, to_currency)
+
+Convert amount from MWK (base currency) to another currency.
+
+```
+mwk_amount = 10000
+usd_amount = currency.convert_from_base(mwk_amount, "USD")
+print(f"{mwk_amount} MWK is approximately {usd_amount} USD")
+
+```
+
+### convert_to_base(amount, from_currency)
+
+Convert amount from another currency to MWK.
+
+```
+usd_amount = 100
+mwk_amount = currency.convert_to_base(usd_amount, "USD")
+print(f"{usd_amount} USD is approximately {mwk_amount} MWK")
+
+```
+
+## License
+
+This project is licensed under the MIT License
