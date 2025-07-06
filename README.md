@@ -22,6 +22,7 @@ Clone the repository or download the source files.
 git clone https://github.com/yourusername/mw_info.git
 cd mw_info
 pip install -r requirements.txt  # if you add dependencies like PyYAML
+```
 
 ## Usage
 
