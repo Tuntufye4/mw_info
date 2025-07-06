@@ -1,10 +1,10 @@
 import os
 import yaml
-
+  
 class CurrencyConverter:
     def __init__(self, rates_file=None):
         if rates_file is None:
-            rates_file = os.path.join(os.path.dirname(__file__), "currency_rates.yml")
+            rates_file = os.path.join(os.path.dirname(__file__), "data/currency_rates.yml")
         self.rates = {}
         self.base_currency = None
         self.load_rates(rates_file)

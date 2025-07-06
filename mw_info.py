@@ -3,12 +3,12 @@ import yaml
 
 class DistrictInfo:
     def __init__(self):
-        path = os.path.join(os.path.dirname(__file__), "data.yml")
+        path = os.path.join(os.path.dirname(__file__), "data/district_data.yml")
         with open(path, "r", encoding="utf-8") as f:
             self.data = yaml.safe_load(f)
 
     def get_all_districts(self):
-        return [d["district"] for d in self.data.get("districts", [])]
+        return [d["district"] for d in self.data.get("districts", [])]  
 
     def get_district_info(self, name, fields=None):
         name = name.strip().lower()
@@ -27,4 +27,4 @@ class DistrictInfo:
         ]
 
     def get_all_district_data(self):
-        return self.data.get("districts", [])
+        return self.data.get("districts", [])  
