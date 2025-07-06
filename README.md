@@ -111,9 +111,12 @@ print(f"{usd_amount} USD is approximately {mwk_amount} MWK")
 
 ## AgriInfoMw Class Methods
 
+```
 from agriculture_info import AgricultureInfoMW
 
 agri = AgricultureInfoMW()
+
+```
 
 ### Query crop or fish info by any name (Chichewa, English, or Scientific)
 
