@@ -1,16 +1,15 @@
 # mw_info
 
-A Python library providing detailed information about Malawi’s districts along with currency conversion based on Malawi Kwacha (MWK).
+A Python library to access structured data about Malawi’s districts, currency exchange rates, and 
+agriculture (crops and fish species).
 
 ---
 
 ## Features
 
-- Retrieve detailed info on all 28 districts of Malawi  
-- Query district data by district name or region  
-- Get specific fields like population, climate, languages, elevation, etc.  
-- Convert MWK to multiple foreign currencies and vice versa using exchange rates loaded from YAML  
-- Easy to extend with updated district or currency data
+- Query detailed district information (population, geography, climate, languages, etc.)
+- Currency conversion based on Malawi Kwacha with multiple foreign currencies
+- Query agricultural data by Chichewa, English, or scientific names for crops and fish species
 
 ---
 
@@ -26,7 +25,7 @@ pip install -r requirements.txt  # if you add dependencies like PyYAML
 
 ## Usage
 
-## DistrictInfo Class Methods & Examples
+## DistrictInfo Class, Methods & Examples
 
 ### get_all_districts()
 
@@ -76,7 +75,7 @@ print(all_data[0])  # Print first district data
 
 ```
 
-## CurrencyConverter Class Methods & Examples
+## CurrencyConverter Class, Methods & Examples
 
 ### available_currencies()
 
@@ -110,6 +109,48 @@ print(f"{usd_amount} USD is approximately {mwk_amount} MWK")
 
 ```
 
+## AgriInfoMw Class Methods
+
+from agriculture_info import AgricultureInfoMW
+
+agri = AgricultureInfoMW()
+
+### Query crop or fish info by any name (Chichewa, English, or Scientific)
+
+```
+crop = agri.query_info("Chimanga")
+print(crop)
+
+fish = agri.query_info("Oreochromis shiranus")
+print(fish)
+```
+
+### Query by English name
+
+```
+crop2 = agri.query_info("Maize")
+print(crop2)
+
+```
+### List all crops
+
+```
+all_crops = agri.list_all_crops()
+print(all_crops)
+
+```
+
+### List all fish species
+
+```
+all_fish = agri.list_all_fish()
+print(all_fish)
+
+```
 ## License
 
 This project is licensed under the MIT License
+
+## Maintainer
+
+Tuntufye Mwanyongo
