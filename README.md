@@ -174,33 +174,42 @@ health = HealthInfoMW()
 
 ### List all districts
 
+```
 print(health.get_all_districts())
+```
 
 ### Get district 
 
+```
 print(health.get_district_health("Zomba"))
+```
 
 ### Filter by facility count
-print(health.filter_by_facility_count("hospitals", threshold=3))
 
+```
+print(health.filter_by_facility_count("hospitals", threshold=3))
+```
 ## Class DemographicsInfoMW
 
 from mw_info.demographics import DemographicsInfoMW
-
 demo = DemographicsInfoMW()
 
 ### Get all districts
-
+```
 print(demo.get_all_districts())
+```
 
 ### Get Total Population
 
+```
 print(demo.get_population_total("Lilongwe"))
 print(demo.get_urban_rural_split("Blantyre"))
-
+```
 ### Get district data
-print(demo.get_district_data("Zomba", fields=["population", "urban_percent"]))
 
+```
+print(demo.get_district_data("Zomba", fields=["population", "urban_percent"]))
+```
 
 ## Data Source
 
