@@ -1,26 +1,41 @@
 # mw_info
 
-A Python library to access structured data about Malawi’s districts, currency exchange rates, and 
-agriculture (crops and fish species).
+A lightweight Python library to access structured information about **Malawi’s districts**, **agriculture**, **currency exchange rates**,
+**health facilities**, and **demographics**, using YAML-backed data.
+
 
 ---
 
 ## Features
 
-- Query detailed district information (population, geography, climate, languages, etc.)
-- Currency conversion based on Malawi Kwacha with multiple foreign currencies
-- Query agricultural data by Chichewa, English, or scientific names for crops and fish species
+✅ **District-level insights**:  
+Region, coordinates, population, climate, timezone, elevation, and more
+
+✅ **Currency conversion**:  
+Convert between MWK and major currencies (USD, EUR, ZAR, etc.)
+
+✅ **Agricultural info**:  
+Query crops and fish species using **Chichewa**, **English**, or **scientific name**
+
+✅ **Health data**:  
+Get health facility counts (hospitals, clinics, health posts) by district
+
+✅ **Demographics**:  
+Population totals, gender ratios, age distribution, and urban/rural splits
 
 ---
 
 ## Installation
 
-Clone the repository or download the source files.
-
 ```bash
-git clone https://github.com/yourusername/mw_info.git
+pip install mw-info
+```
+or for development:
+
+```
+git clone https://github.com/Tuntufye4/mw_info.git
 cd mw_info
-pip install -r requirements.txt  # if you add dependencies like PyYAML
+pip install -e .
 ```
 
 ## Usage
@@ -150,6 +165,43 @@ all_fish = agri.list_all_fish()
 print(all_fish)
 
 ```
+
+## Class HealthInfo
+
+from mw_info.health import HealthInfoMW
+
+health = HealthInfoMW()
+
+### List all districts
+
+print(health.get_all_districts())
+
+### Get district 
+
+print(health.get_district_health("Zomba"))
+
+### Filter by facility count
+print(health.filter_by_facility_count("hospitals", threshold=3))
+
+## Class DemographicsInfoMW
+
+from mw_info.demographics import DemographicsInfoMW
+
+demo = DemographicsInfoMW()
+
+### Get all districts
+
+print(demo.get_all_districts())
+
+### Get Total Population
+
+print(demo.get_population_total("Lilongwe"))
+print(demo.get_urban_rural_split("Blantyre"))
+
+### Get district data
+print(demo.get_district_data("Zomba", fields=["population", "urban_percent"]))
+
+
 ## Data Source
 
 All the yml files datastores are chatgpt generated.
