@@ -212,9 +212,9 @@ print(demo.get_district_data("Zomba", fields=["population", "urban_percent"]))
 ```
 
 ## Pypi Link
-```
+
 [mw_info](https://pypi.org/project/mw-info/)
-```
+
 
 ## Data Source
 
