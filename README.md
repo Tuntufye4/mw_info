@@ -213,7 +213,7 @@ print(demo.get_district_data("Zomba", fields=["population", "urban_percent"]))
 
 ## Data Source
 
-All the yml files datastores are chatgpt generated.
+All the data is chatgpt generated.
 
 ## License
 
