@@ -1,26 +1,26 @@
 # mw_info
 
 A lightweight Python library to access structured information about **Malawi’s districts**, **agriculture**, **currency exchange rates**,
-**health facilities**, and **demographics**, using YAML-backed data.
+**health facilities**, and **demographics**.
 
 
 ---
 
 ## Features
 
-✅ **District-level insights**:  
+**District-level insights**:  
 Region, coordinates, population, climate, timezone, elevation, and more
 
-✅ **Currency conversion**:  
+**Currency conversion**:  
 Convert between MWK and major currencies (USD, EUR, ZAR, etc.)
 
-✅ **Agricultural info**:  
+**Agricultural info**:  
 Query crops and fish species using **Chichewa**, **English**, or **scientific name**
 
-✅ **Health data**:  
+**Health data**:  
 Get health facility counts (hospitals, clinics, health posts) by district
 
-✅ **Demographics**:  
+**Demographics**:  
 Population totals, gender ratios, age distribution, and urban/rural splits
 
 ---
