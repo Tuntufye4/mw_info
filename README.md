@@ -211,6 +211,11 @@ print(demo.get_urban_rural_split("Blantyre"))
 print(demo.get_district_data("Zomba", fields=["population", "urban_percent"]))
 ```
 
+## Pypi Link
+```
+[mw_info](https://pypi.org/project/mw-info/)
+```
+
 ## Data Source
 
 All the data is chatgpt generated.
