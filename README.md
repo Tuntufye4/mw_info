@@ -38,6 +38,8 @@ pip install mw-info
 ### get_all_districts()
 
 ```
+from mw_info.districts import DistrictInfo
+
 districts = DistrictInfo()
 all_districts = districts.get_all_districts()
 print(all_districts)
@@ -48,6 +50,8 @@ print(all_districts)
 ### get_district_info(district_name, fields=None)
 
 ```
+from mw_info.districts import DistrictInfo
+
 districts = DistrictInfo()
 
 #### Full info for Lilongwe
