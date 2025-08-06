@@ -30,13 +30,6 @@ Population totals, gender ratios, age distribution, and urban/rural splits
 ```bash
 pip install mw-info
 ```
-or for development:
-
-```
-git clone https://github.com/Tuntufye4/mw_info.git
-cd mw_info
-pip install -e .
-```
 
 ## Usage
 
