@@ -54,3 +54,6 @@ class DemographicsInfoMW:
     def _find_district(self, name):
         name = name.strip().lower()
         return next((d for d in self.data if d["district"].lower() == name), None)
+
+    def get_all_demographics(self):
+        return self.data 
