@@ -54,11 +54,11 @@ from mw_info.districts import DistrictInfo
 
 districts = DistrictInfo()
 
-#### Full info for Lilongwe
+### Full info for Lilongwe
 info = districts.get_district_info("Lilongwe")
 print(info)
 
-#### Selected fields only
+### Selected fields only
 selected = districts.get_district_info("Mangochi", fields=["population_2023", "languages", "climate"])
 print(selected)
 
