@@ -259,3 +259,59 @@ fish:
   - chichewa: Mkunga
     english: Mudfish
     scientific: Parachanna africana
+
+livestock:
+  - chichewa: Ng’ombe
+    english: Cattle
+    scientific: Bos taurus / Bos indicus
+  - chichewa: Nkhuku
+    english: Chicken
+    scientific: Gallus gallus domesticus
+  - chichewa: Mbuzi
+    english: Goat
+    scientific: Capra hircus
+  - chichewa: Nguluwe
+    english: Pig
+    scientific: Sus scrofa domesticus
+  - chichewa: Mbuzi ya mkaka
+    english: Dairy Goat
+    scientific: Capra aegagrus hircus
+  - chichewa: Nkhosa
+    english: Sheep
+    scientific: Ovis aries
+  - chichewa: Mbawala
+    english: Deer (sometimes farmed)
+    scientific: Cervidae spp.
+  - chichewa: Asilikali
+    english: Donkey
+    scientific: Equus africanus asinus
+  - chichewa: Mbira
+    english: Duck
+    scientific: Anas platyrhynchos domesticus
+  - chichewa: Nkhuku za nkhalango
+    english: Guinea Fowl
+    scientific: Numida meleagris
+  - chichewa: Bata
+    english: Turkey
+    scientific: Meleagris gallopavo
+  - chichewa: Kavalo
+    english: Horse
+    scientific: Equus ferus caballus
+  - chichewa: Nkhumba
+    english: Pigeon
+    scientific: Columba livia domestica
+  - chichewa: Nkholi
+    english: Rabbit
+    scientific: Oryctolagus cuniculus
+  - chichewa: Kalulu
+    english: Hare
+    scientific: Lepus spp.
+  - chichewa: Njobvu
+    english: Cattle (Beef type)
+    scientific: Bos taurus indicus
+  - chichewa: Ngamera
+    english: Camel
+    scientific: Camelus dromedarius
+  - chichewa: Mbalame za nkukuta
+    english: Quail        
+    scientific: Coturnix coturnix

@@ -30,12 +30,12 @@ class DistrictInfo:
         return self.data.get("districts", [])  
 
 
-     def get_climate(self, name):
+    def get_climate(self, name):
         d = self._find_district(name)
         return d.get("climate") if d else None
     
     
-    def get_district_type(self, name):
+    def get_district_type(self, name):  
         d = self._find_district(name)
         return d.get("district_type") if d else None
     
@@ -51,8 +51,16 @@ class DistrictInfo:
         d = self._find_district(name)
         return d.get("area_km2") if d else None
     
+    def get_established_year(self, name):
+        d = self._find_district(name)
+        return d.get("year_established") if d else None   
+    
 
     def _find_district(self, name):
         name = name.strip().lower()
         return next((d for d in self.data if d["district"].lower() == name), None)
+
+    def _find_region(self, name):
+        name = name.strip().lower()   
+        return next((d for d in self.data if d["region"].lower() == name), None)
 

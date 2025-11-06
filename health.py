@@ -16,7 +16,7 @@ class HealthInfoMW:
         for district in self.data:
             if district["district"].lower() == name:
                 if fields is None:
-                    return district
+                    return district   
                 return {field: district.get(field, "N/A") for field in fields}
         return None
 
@@ -32,3 +32,47 @@ class HealthInfoMW:
 
     def get_all_health_data(self):
         return self.data
+    
+    
+    def get_dispensaries(self, name):
+        d = self._find_district(name)   
+        return d.get("dispensaries") if d else None 
+
+    def get_dispensaries(self, name):
+        d = self._find_region(name)   
+        return d.get("dispensaries") if d else None 
+    
+    
+    def get_hospitals(self, name):
+        d = self._find_district(name)   
+        return d.get("hospitals") if d else None 
+    
+    def get_hospitals(self, name):
+        d = self._find_region(name)   
+        return d.get("hospitals") if d else None 
+    
+    
+    def get_health_posts(self, name):
+        d = self._find_district(name)   
+        return d.get("health_posts") if d else None 
+    
+    def get_health_posts(self, name):
+        d = self._find_region(name)   
+        return d.get("health_posts") if d else None 
+    
+    
+    def get_health_centers(self, name):
+        d = self._find_district(name)   
+        return d.get("health_centers") if d else None 
+    
+    def get_health_centers(self, name):
+        d = self._find_region(name)   
+        return d.get("health_centers") if d else None 
+    
+    def _find_district(self, name):
+        name = name.strip().lower()
+        return next((d for d in self.data if d["district"].lower() == name), None)
+    
+    def _find_region(self, name):
+        name = name.strip().lower()
+        return next((d for d in self.data if d["region"].lower() == name), None)

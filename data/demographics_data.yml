@@ -1,5 +1,6 @@
 demographics:
   - district: Balaka
+    region: South
     population: 380000
     urban_percent: 21
     age_distribution:
@@ -10,6 +11,7 @@ demographics:
       male: 49
       female: 51
   - district: Blantyre
+    region: South
     population: 1100000
     urban_percent: 83
     age_distribution:
@@ -20,6 +22,7 @@ demographics:
       male: 48
       female: 52
   - district: Chikwawa
+    region: South
     population: 310000
     urban_percent: 23
     age_distribution:
@@ -30,6 +33,7 @@ demographics:
       male: 49
       female: 51
   - district: Chiradzulu
+    region: South
     population: 290000
     urban_percent: 24
     age_distribution:
@@ -40,6 +44,7 @@ demographics:
       male: 49
       female: 51
   - district: Chitipa
+    region: North
     population: 340000
     urban_percent: 20
     age_distribution:
@@ -50,6 +55,7 @@ demographics:
       male: 48
       female: 52
   - district: Lilongwe
+    region: Central 
     population: 1700000
     urban_percent: 62
     age_distribution:
@@ -60,6 +66,7 @@ demographics:
       male: 49
       female: 51
   - district: Zomba
+    region: South  
     population: 900000
     urban_percent: 45
     age_distribution:

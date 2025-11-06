@@ -8,19 +8,26 @@ class AgriInfoMW:
         with open(file_path, "r", encoding="utf-8") as f:
             self.data = yaml.safe_load(f)
         self.crops = self.data.get("crops", []) 
-        self.fish = self.data.get("fish", [])
+        self.fish = self.data.get("fish", [])   
+        self.livestock = self.data.get("livestock", [])
 
-    def get_all_crops(self):
+    def get_crop_list(self):
         return self.crops
 
-    def get_all_fish(self):
+    def get_fish_list(self):
         return self.fish
+    
+    def get_livestock_list(self):
+        return self.livestock
 
     def find_crop(self, name):
         return self._find_item(name, self.crops)
 
-    def find_fish(self, name):
+    def find_fish(self, name):   
         return self._find_item(name, self.fish)
+    
+    def find_livestock(self, name):
+        return self._find_item(name, self.livestock)
 
     def _find_item(self, name, items):
         name_lower = name.lower()
