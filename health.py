@@ -8,8 +8,8 @@ class HealthInfoMW:
         with open(yaml_path, "r", encoding="utf-8") as f:
             self.data = yaml.safe_load(f).get("health", [])
 
-    def get_all_districts(self):
-        return [d["district"] for d in self.data]
+    def get_all_districts(self):   
+        return [d["district"] for d in self.data]   
 
     def get_district_health(self, name, fields=None):
         name = name.strip().lower()
@@ -19,6 +19,17 @@ class HealthInfoMW:
                     return district   
                 return {field: district.get(field, "N/A") for field in fields}
         return None
+    
+
+    def get_region_health(self, name, fields=None):
+        name = name.strip().lower()
+        for region in self.data:
+            if region["region"].lower() == name:
+                if fields is None:
+                    return region
+                return {field: region.get(field, "N/A") for field in fields}
+            return None
+        
 
     def filter_by_facility_count(self, facility_type, threshold):
         """
@@ -38,7 +49,7 @@ class HealthInfoMW:
         d = self._find_district(name)   
         return d.get("dispensaries") if d else None 
 
-    def get_dispensaries(self, name):
+    def get_dispensaries_reg(self, name):
         d = self._find_region(name)   
         return d.get("dispensaries") if d else None 
     
@@ -47,7 +58,7 @@ class HealthInfoMW:
         d = self._find_district(name)   
         return d.get("hospitals") if d else None 
     
-    def get_hospitals(self, name):
+    def get_hospitals_reg(self, name):   
         d = self._find_region(name)   
         return d.get("hospitals") if d else None 
     
@@ -56,18 +67,27 @@ class HealthInfoMW:
         d = self._find_district(name)   
         return d.get("health_posts") if d else None 
     
-    def get_health_posts(self, name):
+    def get_health_posts_reg(self, name):
         d = self._find_region(name)   
-        return d.get("health_posts") if d else None 
+        return d.get("health_posts") if d else None    
     
-    
+         
     def get_health_centers(self, name):
         d = self._find_district(name)   
         return d.get("health_centers") if d else None 
     
-    def get_health_centers(self, name):
-        d = self._find_region(name)   
+    def get_health_centers_reg(self, name):
+        d = self._find_region(name)
         return d.get("health_centers") if d else None 
+
+    def get_Govt_hospital(self, name):
+        d = self._find_district(name)
+        return d.get("Govt_hospitals") if d else None
+
+    
+    def get_Govt_hospital_reg(self, name):
+        d = self._find_region(name)
+        return d.get("Govt_hospitals") if d else None 
     
     def _find_district(self, name):
         name = name.strip().lower()

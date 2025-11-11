@@ -6,7 +6,7 @@ districts:
     capital: Balaka
     lakes: null
     mountains: null
-    population_2023: 310000
+    population: 310000
     area_km2: 2869
     population_density: 108
     elevation_m: 600
@@ -24,7 +24,7 @@ districts:
     capital: Blantyre
     lakes: null
     mountains: Soche, Ndirande Hills
-    population_2023: 1200000
+    population: 1200000
     area_km2: 2012
     population_density: 596
     elevation_m: 1030
@@ -42,7 +42,7 @@ districts:
     capital: Chikwawa
     lakes: null
     mountains: null
-    population_2023: 430000
+    population: 430000
     area_km2: 4545
     population_density: 95
     elevation_m: 300
@@ -60,7 +60,7 @@ districts:
     capital: Chiradzulu
     lakes: null
     mountains: null
-    population_2023: 300000
+    population: 300000
     area_km2: 767
     population_density: 391
     elevation_m: 1000
@@ -78,7 +78,7 @@ districts:
     capital: Chitipa
     lakes: null
     mountains: Viphya Plateau
-    population_2023: 250000
+    population: 250000
     area_km2: 4395
     population_density: 57
     elevation_m: 1500
@@ -96,7 +96,7 @@ districts:
     capital: Dedza
     lakes: null
     mountains: Dedza Mountain
-    population_2023: 800000
+    population: 800000
     area_km2: 3624
     population_density: 221
     elevation_m: 1600
@@ -113,7 +113,7 @@ districts:
     capital: Dowa
     lakes: null
     mountains: null
-    population_2023: 400000
+    population: 400000
     area_km2: 3140
     population_density: 127
     elevation_m: 1100
@@ -132,7 +132,7 @@ districts:
     lakes:
       - Lake Malawi
     mountains: Nyika Highlands
-    population_2023: 400000
+    population: 400000
     area_km2: 3355
     population_density: 119
     elevation_m: 520
@@ -150,7 +150,7 @@ districts:
     capital: Kasungu
     lakes: null
     mountains: null
-    population_2023: 900000
+    population: 900000
     area_km2: 7907
     population_density: 114
     elevation_m: 1300
@@ -168,7 +168,7 @@ districts:
     capital: Lilongwe
     lakes: null
     mountains: Dzalanyama Hills
-    population_2023: 1400000
+    population: 1400000
     area_km2: 6159
     population_density: 227
     elevation_m: 1050
@@ -185,7 +185,7 @@ districts:
     capital: Machinga
     lakes: null
     mountains: null
-    population_2023: 400000
+    population: 400000
     area_km2: 3634
     population_density: 110
     elevation_m: 600
@@ -205,7 +205,7 @@ districts:
       - Malawi
       - Malombe
     mountains: Mangochi Hills
-    population_2023: 1200000
+    population: 1200000
     area_km2: 6273
     population_density: 191
     elevation_m: 480
@@ -223,7 +223,7 @@ districts:
     capital: Mchinji
     lakes: null
     mountains: null
-    population_2023: 530000
+    population: 530000
     area_km2: 3370
     population_density: 157
     elevation_m: 1100
@@ -241,7 +241,7 @@ districts:
     capital: Mulanje
     lakes: null
     mountains: Mulanje Mountain
-    population_2023: 600000
+    population: 600000
     area_km2: 2056
     population_density: 292
     elevation_m: 1300
@@ -259,7 +259,7 @@ districts:
     capital: Mwanza
     lakes: null
     mountains: null
-    population_2023: 260000
+    population: 260000
     area_km2: 1318
     population_density: 197
     elevation_m: 600
@@ -277,7 +277,7 @@ districts:
     capital: Mzuzu
     lakes: null
     mountains: Vipya Plateau
-    population_2023: 900000
+    population: 900000
     area_km2: 10430
     population_density: 86
     elevation_m: 1300
@@ -296,8 +296,8 @@ districts:
     lakes:
       - Lake Malawi
     mountains: null
-    population_2023: 240000
-    area_km2: 1779
+    population: 240000
+    area_km2: 1779    
     population_density: 135
     elevation_m: 500
     year_established: 1910
@@ -315,7 +315,7 @@ districts:
     lakes:
       - Lake Malawi
     mountains: Chipata Mountain
-    population_2023: 400000
+    population: 400000
     area_km2: 4259
     population_density: 94
     elevation_m: 480
@@ -333,7 +333,7 @@ districts:
     capital: Nsanje
     lakes: null
     mountains: null
-    population_2023: 260000
+    population: 260000
     area_km2: 1384
     population_density: 188
     elevation_m: 80
@@ -351,7 +351,7 @@ districts:
     capital: Ntcheu
     lakes: null
     mountains: null
-    population_2023: 470000
+    population: 470000
     area_km2: 4167
     population_density: 113
     elevation_m: 1100
@@ -368,7 +368,7 @@ districts:
     capital: Ntchisi
     lakes: null
     mountains: null
-    population_2023: 300000
+    population: 300000
     area_km2: 1489
     population_density: 201
     elevation_m: 1200
@@ -385,7 +385,7 @@ districts:
     capital: Phalombe
     lakes: null
     mountains: null
-    population_2023: 350000
+    population: 350000
     area_km2: 1587
     population_density: 221
     elevation_m: 700
@@ -403,7 +403,7 @@ districts:
     capital: Rumphi
     lakes: null
     mountains: Viphya Plateau
-    population_2023: 220000
+    population: 220000
     area_km2: 4661
     population_density: 47
     elevation_m: 1200
@@ -422,7 +422,7 @@ districts:
     lakes:
       - Lake Malawi
     mountains: null
-    population_2023: 500000
+    population: 500000
     area_km2: 2196
     population_density: 228
     elevation_m: 510
@@ -439,7 +439,7 @@ districts:
     capital: Thyolo
     lakes: null
     mountains: Mulanje Mountain (partly)
-    population_2023: 500000
+    population: 500000
     area_km2: 1501
     population_density: 333
     elevation_m: 1100
@@ -458,7 +458,7 @@ districts:
     lakes:
       - Lake Chilwa
     mountains: Zomba Plateau
-    population_2023: 700000
+    population: 700000
     area_km2: 2580
     population_density: 271
     elevation_m: 900

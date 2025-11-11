@@ -2,22 +2,26 @@ health:
   - district: Balaka
     region: South
     hospitals: 3
+    Govt_hospitals: ['Balaka district hospital']
     health_centers: 22
     dispensaries: 106
     health_posts: 45
   - district: Blantyre
     region: South
     hospitals: 4 
+    Govt_hospitals: ['Qech']
     health_centers: 24
     dispensaries: 109
     health_posts: 50
   - district: Chikwawa
     region: South 
     hospitals: 3
+    Govt_hospitals: ['Chikwawa district hospital']
     health_centers: 26
     dispensaries: 112
     health_posts: 49
   - district: Chiradzulu
+    Govt_hospitals: ['Chiradzulu district hospital']
     region: South 
     hospitals: 4
     health_centers: 28
@@ -56,6 +60,7 @@ health:
   - district: Lilongwe
     region: Central 
     hospitals: 2
+    Govt_hospitals: ['Mlambe hospital','Kamuzu Central hospital']
     health_centers: 40
     dispensaries: 133
     health_posts: 60

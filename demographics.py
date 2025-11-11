@@ -10,9 +10,22 @@ class DemographicsInfoMW:
 
     def get_all_districts(self):
         return [d["district"] for d in self.data]
+      
+    
+    def get_all_regions(self):
+        return [d["region"] for d in self.data] 
+        
 
     def get_district_data(self, name, fields=None):
         d = self._find_district(name)
+        if not d:
+            return None
+        if fields is None:
+            return d
+        return {field: d.get(field, "N/A") for field in fields}
+    
+    def get_region_data(self, name, fields=None):
+        d = self._find_region(name)
         if not d:
             return None
         if fields is None:
@@ -26,9 +39,17 @@ class DemographicsInfoMW:
     def get_age_distribution(self, name):
         d = self._find_district(name)
         return d.get("age_distribution") if d else None
+    
+    def get_age_distribution_reg(self, name):
+        d = self._find_region(name)
+        return d.get("age_distribution") if d else None 
 
     def get_gender_ratio(self, name):
         d = self._find_district(name)
+        return d.get("gender_ratio") if d else None
+        
+    def get_gender_ratio_reg(self, name):
+        d = self._find_region(name)
         return d.get("gender_ratio") if d else None
 
     def get_urban_rural_split(self, name):
@@ -41,7 +62,7 @@ class DemographicsInfoMW:
 
     def filter_by_urbanization(self, min_percent):
         return [
-            d for d in self.data
+            d for d in self.data    
             if d.get("urban_percent", 0) >= min_percent
         ]
 
