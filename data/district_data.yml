@@ -16,6 +16,12 @@ districts:
       - Yao
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Farming (maize, cotton, rice, groundnuts)
+      - Livestock rearing (goats, cattle, poultry)
+      - Small-scale businesses and trading
+      - Brickmaking and quarrying
+      - Agro-processing (grain milling, rice milling)
 
   - district: Blantyre
     region: Southern
@@ -34,6 +40,12 @@ districts:
       - Lomwe
     climate: Tropical Savanna
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Commerce and retail trade
+      - Manufacturing and industry
+      - Banking and financial services
+      - Transportation and logistics
+      - Peri-urban agriculture
 
   - district: Chikwawa
     region: Southern
@@ -52,6 +64,12 @@ districts:
       - Sena
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Sugarcane farming (Illovo industry)
+      - Cotton and maize farming
+      - Livestock herding
+      - Fishing
+      - Small-scale trading
 
   - district: Chiradzulu
     region: Southern
@@ -70,6 +88,11 @@ districts:
       - Lomwe
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Subsistence farming
+      - Small businesses
+      - Vegetable and fruit production
+      - Livestock rearing
 
   - district: Chitipa
     region: Northern
@@ -88,6 +111,11 @@ districts:
       - Ngonde
     climate: Highland Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Farming (maize, beans, Irish potatoes)
+      - Livestock (cattle, goats)
+      - Cross-border trade with Tanzania and Zambia
+      - Timber and honey production
 
   - district: Dedza
     region: Central
@@ -105,6 +133,12 @@ districts:
       - Chichewa
     climate: Cool Highlands
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Irish potato farming
+      - Vegetable production
+      - Dairy farming
+      - Pottery and crafts (famous Dedza Pottery)
+      - Forestry
 
   - district: Dowa
     region: Central
@@ -123,6 +157,10 @@ districts:
       - Tumbuka
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Maize and tobacco farming
+      - Small-scale retail trade
+      - Livestock production
 
   - district: Karonga
     region: Northern
@@ -142,6 +180,11 @@ districts:
       - Nyakyusa
     climate: Tropical Wet
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Fishing
+      - Agriculture (rice, cassava, bananas)
+      - Mining (uranium at Kayelekera)
+      - Cross-border trade with Tanzania
 
   - district: Kasungu
     region: Central
@@ -160,6 +203,11 @@ districts:
       - Tumbuka
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Tobacco farming (major estate area)
+      - Maize and groundnut farming
+      - Beekeeping
+      - Trading centers along M1 road
 
   - district: Lilongwe
     region: Central
@@ -177,6 +225,12 @@ districts:
       - Chichewa
     climate: Subtropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Government and public administration
+      - Retail and wholesale trade
+      - Construction and real estate
+      - Manufacturing
+      - Commercial farming in peri-urban areas
 
   - district: Machinga
     region: Southern
@@ -195,6 +249,11 @@ districts:
       - Yao
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Rice and maize farming
+      - Fishing (near Lake Chilwa)
+      - Livestock
+      - Small-scale trade
 
   - district: Mangochi
     region: Southern
@@ -215,6 +274,12 @@ districts:
       - Chichewa
     climate: Tropical Dry
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Fishing and fish processing
+      - Tourism (Lake Malawi resorts)
+      - Rice and maize farming
+      - Transportation and trade
+      - Livestock
 
   - district: Mchinji
     region: Central
@@ -233,6 +298,11 @@ districts:
       - Tumbuka
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Tobacco farming
+      - Maize and groundnut farming
+      - Cross-border trade with Zambia
+      - Livestock
 
   - district: Mulanje
     region: Southern
@@ -251,6 +321,12 @@ districts:
       - Chichewa
     climate: Tropical Wet
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Tea estates (major industry)
+      - Timber
+      - Tourism (Mulanje Mountain)
+      - Vegetable farming
+      - Small business trading
 
   - district: Mwanza
     region: Southern
@@ -269,6 +345,11 @@ districts:
       - Lomwe
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Cross-border trade with Mozambique
+      - Fruit production (mangoes, bananas)
+      - Maize and groundnut farming
+      - Transport and logistics hub
 
   - district: Mzimba
     region: Northern
@@ -287,6 +368,11 @@ districts:
       - Ngoni
     climate: Cool Highlands
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Maize, tobacco, and cassava farming
+      - Cattle herding
+      - Timber production
+      - Retail trade
 
   - district: Nkhata Bay
     region: Northern
@@ -297,7 +383,7 @@ districts:
       - Lake Malawi
     mountains: null
     population: 240000
-    area_km2: 1779    
+    area_km2: 1779
     population_density: 135
     elevation_m: 500
     year_established: 1910
@@ -306,6 +392,11 @@ districts:
       - Tonga
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Fishing and boat transport
+      - Tourism
+      - Cassava farming
+      - Crafts (wood carving)
 
   - district: Nkhotakota
     region: Central
@@ -325,6 +416,11 @@ districts:
       - Tonga
     climate: Tropical Dry
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Fishing
+      - Rice and cassava farming
+      - Tourism (Nkhotakota Wildlife Reserve)
+      - Trading
 
   - district: Nsanje
     region: Southern
@@ -343,6 +439,11 @@ districts:
       - Chichewa
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Livestock herding
+      - Cotton and sorghum farming
+      - Fishing
+      - Small-scale trade
 
   - district: Ntcheu
     region: Central
@@ -360,6 +461,11 @@ districts:
       - Chichewa
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Irish potato farming
+      - Maize and bean farming
+      - Livestock production
+      - Roadside trading (M1 corridor)
 
   - district: Ntchisi
     region: Central
@@ -377,6 +483,11 @@ districts:
       - Chichewa
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Maize and cassava farming
+      - Beekeeping
+      - Livestock rearing
+      - Small-scale trade
 
   - district: Phalombe
     region: Southern
@@ -395,6 +506,11 @@ districts:
       - Chichewa
     climate: Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Maize and cassava farming
+      - Livestock
+      - Small-scale trading
+      - Horticulture (vegetables)
 
   - district: Rumphi
     region: Northern
@@ -413,6 +529,11 @@ districts:
       - Ngoni
     climate: Highland Tropical
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Livestock (cattle, goats)
+      - Maize farming
+      - Tourism (Nyika National Park)
+      - Timber
 
   - district: Salima
     region: Central
@@ -431,6 +552,11 @@ districts:
       - Chichewa
     climate: Tropical Dry
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Tourism (Senga Bay)
+      - Fishing
+      - Rice and cassava farming
+      - Trading and transportation
 
   - district: Thyolo
     region: Southern
@@ -449,6 +575,11 @@ districts:
       - Chichewa
     climate: Tropical Wet
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Tea estates (major industry)
+      - Dairy farming
+      - Fruit and vegetable farming
+      - Timber
 
   - district: Zomba
     region: Southern
@@ -468,3 +599,9 @@ districts:
       - Chichewa
     climate: Tropical Wet
     timezone: CAT (UTC+2)
+    economic_activities:
+      - Agriculture (maize, cassava)
+      - Forestry and timber
+      - Tourism (Zomba Plateau)
+      - Teaching and public employment
+             

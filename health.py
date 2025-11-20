@@ -74,7 +74,7 @@ class HealthInfoMW:
          
     def get_health_centers(self, name):
         d = self._find_district(name)   
-        return d.get("health_centers") if d else None 
+        return d.get("health_centers") if d else None     
     
     def get_health_centers_reg(self, name):
         d = self._find_region(name)

@@ -3,10 +3,10 @@ import yaml
 
 class DistrictInfo:
     def __init__(self):
-        path = os.path.join(os.path.dirname(__file__), "data/district_data.yml")
+        path = os.path.join(os.path.dirname(__file__), "data/district_data.yml")   
         with open(path, "r", encoding="utf-8") as f:
             self.data = yaml.safe_load(f)
-
+      
     def get_all_districts(self):
         return [d["district"] for d in self.data.get("districts", [])]  
     
@@ -89,10 +89,18 @@ class DistrictInfo:
     def get_area(self, name):
         d = self._find_district(name)
         return d.get("area_km2") if d else None
-    
-    def get_established_year(self, name):
+        
+    def get_established_year(self, name):      
         d = self._find_district(name)
         return d.get("year_established") if d else None   
+
+    def get_economic_activities(self, name):
+        d = self._find_district(name)
+        return d.get("economic_activities") if d else None
+
+    def get_economic_activities_reg(self, name):
+        d = self._find_region(name)
+        return d.get("economic_activities") if d else None 
     
 
     def _find_district(self, name):
